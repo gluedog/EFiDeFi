@@ -44,7 +44,7 @@ def getDefi(update, context):
     # Then we can sort the change24hr_dict dictionary from highest to lowest and we just print it in that order.
         for token in data:
             if token['account'].upper() == "DOLPHINTOKEN" or token['account'].upper() == "EOSDMDTOKENS" or token['account'].upper() == "EOSHUBTOKENS":
-                skip = True; print("skip",skip)
+                skip = True; print("skip",skip) # Skip the old versions of the token with the same ticker symbols
             else:
                 skip = False; print("skip",skip)
 
