@@ -2,6 +2,8 @@
 # By Gluedog
 
 import http.client
+
+# The telegram python official library
 import telegram
 from telegram.ext import Updater
 from telegram.ext import CommandHandler
@@ -215,7 +217,7 @@ def main():
     dispatcher.add_handler(CommandHandler("p", getPrice))
     dispatcher.add_handler(CommandHandler("defi", getDefi))
     dispatcher.add_handler(CommandHandler("start", start_callback))
-    #dispatcher.add_handler(MessageHandler(Filters.text, chonge_handler))
+    #dispatcher.add_handler(MessageHandler(Filters.text, chonge_handler)) # You can use this template to get your bot to reply to people
     updater.start_polling()
 
 
