@@ -1,3 +1,6 @@
+# Telegram Price Bot for EOS Tokens
+# By Gluedog
+
 import http.client
 import telegram
 from telegram.ext import Updater
